@@ -15,7 +15,7 @@
 
 .nav-link {
   background-color: rgb(73, 5, 73);
-  font-size: 20px !important;
+  font-size: 15px !important;
   text-transform: uppercase !important;
   margin-left: 5px !important;
   color: violet !important;
@@ -99,10 +99,14 @@
 }
 
 .jumbotron1 {
-  background-image: url(img/portada\ nosotros.jpg);
+  background-image: url(img/evoluciona.jpg);
   background-position: center;
   background-size: cover;
   height: 800px;
+}
+
+.jumbotron1 h1 {
+  color: rgb(73, 5, 73);
 }
 
 .jumbotron1 p {
@@ -224,6 +228,21 @@
   transform: perspective(600px) rotateY(360deg);
 }
 
+.videos-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: violet;
+}
+
+.videos {
+  padding: 30px;
+  margin: 30px;
+  cursor: pointer;
+}
+
 .jumbotron3 {
   background-image: url(img/portada\ nutricion.jpg);
   background-position: center;
@@ -236,6 +255,7 @@
   font-size: 20px;
   text-shadow: 0 0 20px;
   text-align: center;
+  height: auto;
 }
 
 .card-container1 {
@@ -258,9 +278,10 @@
   width: 400px;
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(73, 5, 73);
   border-radius: 5px;
-  background-color: #f5f5f5;
+  background-color: violet;
+  background-color: transparent;
 }
 
 label {
@@ -274,7 +295,7 @@ textarea {
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(73, 5, 73);
   border-radius: 3px;
 }
 
@@ -309,18 +330,33 @@ h2 {
 h3 {
   text-align: center;
   padding: 30px;
+  justify-content: center;
 }
 
 .nleft {
-  background-image: url(img/mundo\ morado.jpg);
+  background-image: url(img/gente.jpg);
   flex-wrap: wrap;
   background-position: center;
-  background-size: cover;
-  height: 500px;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .nright {
   background-color: violet;
+}
+
+.contenedor {
+  background-color: violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt {
+  margin-right: 10px;
+  margin-left: 10px;
+  justify-content: center;
 }
 
 footer {
@@ -375,12 +411,4 @@ footer a:hover {
   line-height: 40px;
   text-align: center;
   box-shadow: 0 0 10px rgb(73, 5, 73);
-}
-
-@media only screen and (min-width: 0) and (max-width: 576px) {
-  .navbar-collapse {
-    background-color: green;
-    display: flex;
-    justify-content: center !important;
-  }
 }/*# sourceMappingURL=estilos.css.map */
